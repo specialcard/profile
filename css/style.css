@@ -247,7 +247,7 @@ html,body{
   font-weight: 600;
 }
 /* cont4 */
-.cont4{
+.contents>div.cont4.active{
   width: 100%;
   height: 100%;
   display: flex;
