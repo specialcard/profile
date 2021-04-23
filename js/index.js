@@ -181,6 +181,7 @@ function main() {
 
     function clock() {
         const date = new Date();
+        const year = date.getUTCFullYear();
         const monthDate = date.getMonth();
         const clockDate = date.getDate();
         const hoursDate = date.getHours();
@@ -189,7 +190,7 @@ function main() {
         const dayDate = date.getDay();
 
         const week = ['일', '월', '화', '수', '목', '금', '토'];
-        clockTargeting.innerHTML = `${monthDate+1}월  ${clockDate}일 ${week[dayDate]} ${hoursDate}:${minDate}:${secDate}`
+        clockTargeting.innerHTML = `${year}년 ${monthDate+1}월  ${clockDate}일 ${week[dayDate]}요일 ${hoursDate}:${minDate}:${secDate}`
     }
 
     setInterval(() => {
